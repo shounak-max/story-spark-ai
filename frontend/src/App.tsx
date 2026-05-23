@@ -34,7 +34,6 @@ import ProfileComponent from "./components/dashboard/profile/profile.component";
 import PaymentComponent from "./components/home/pricing/payment.component";
 import Contact from "./components/contactus/contactus";
 import HelpCenterComponent from "./components/help_center/help_center.component";
-import ErrorBoundary from "./components/ErrorBoundary";
 import AboutUsComponent from "./components/footer/about-us.tsx";
 import CareerComponent from "./components/footer/career.tsx";
 // import ContactUsComponent from "./components/footer/contact-us.tsx";
@@ -43,6 +42,7 @@ import BlogComponent from "./components/footer/blog.tsx";
 import GuidelinesComponent from "./components/footer/guidelines.tsx";
 import TemplatesComponent from "./components/templates/templates.component";
 import CommunityComponent from "./components/community/community.component";
+import MagicCursorComponent from "./components/magic-cursor/magic_cursor.component";
 const ProtectedRoute = ({
   element,
   allowedRoles,
@@ -77,6 +77,7 @@ function App() {
 
   return (
     <Router>
+      <MagicCursorComponent />
       {/* Dark Mode Toggle Button */}
       {/* <div className="fixed top-4 right-4 z-50">
         <button
